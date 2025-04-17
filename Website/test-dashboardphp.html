@@ -1,0 +1,94 @@
+<?php 
+  
+	ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+  
+	include 'sqllogic.php';
+	list($adultBand1, $childBand1, $genPark1, $premPark1, $adultBand2, $childBand2, $genPark2, $premPark2) = dashboard_populate();
+	
+  ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hagley | Ticketing Dashboard</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  
+  <div class="header">
+    <img src="https://www.hagley.org/sites/all/themes/hagley/images/hagley-logo-white-on-trans.png" alt="Hagley Museum Logo">
+    <h1>Fireworks at Hagley</h1>
+    <img src="https://www.hagley.org/sites/all/themes/hagley/images/hagley-logo-white-on-trans.png" alt="Hagley Museum Logo">
+  </div>
+  
+  <div class="field-container">
+    <h2>First Fireworks Day Event</h2>
+    <div class="metrics-container">
+	
+      <div class="metric-box">
+        <div class="bar1"></div>
+        <div><?php echo $genPark1; ?></div>
+        <div class="description">General Parking Passes</div>
+      </div>
+	  
+      <div class="metric-box">
+        <div class="bar"></div>
+        <div><?php echo $premPark1; ?></div>
+        <div class="description">Premium Parking Passes</div>
+      </div>
+	  
+      <div class="metric-box">
+        <div class="bar3"></div>
+        <div><?php echo $adultBand1; ?></div>
+        <div class="description">Adult Wristbands</div>
+      </div>
+	  
+      <div class="metric-box">
+        <div class="bar2"></div>
+        <div><?php echo $childBand1; ?></div>
+        <div class="description">Children Wristbands</div>
+      </div>
+	  
+    </div>
+  </div>
+  
+  <div class="field-container">
+    <h3>Second Fireworks Day Event</h3>
+    <div class="metrics-container">
+	
+      <div class="metric-box">
+        <div class="bar1"></div>
+        <div><?php echo $genPark2; ?></div>
+        <div class="description">General Parking Passes</div>
+      </div>
+	  
+      <div class="metric-box">
+        <div class="bar"></div>
+        <div><?php echo $premPark2; ?></div>
+        <div class="description">Premium Parking Passes</div>
+      </div>
+	  
+      <div class="metric-box">
+        <div class="bar3"></div>
+        <div><?php echo $adultBand2; ?></div>
+        <div class="description">Adult Wristbands</div>
+      </div>
+	  
+      <div class="metric-box">
+        <div class="bar2"></div>
+        <div><?php echo $childBand2; ?></div>
+        <div class="description">Children's Wristbands</div>
+      </div>
+	  
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>For Internal Use By Hagley Staff</p>
+    <p>&copy;2025 Hagley Museum. All rights reserved.</p>
+  </div>
+</body>
+</html>

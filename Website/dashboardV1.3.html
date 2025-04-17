@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hagley | Ticketing Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #00425F, #002F47);
+      padding: 20px 0;
+    }
+    .header img {
+      height: 150px;
+      margin: 0 20px;
+    }
+    h1 {
+      font-size: 100px;
+      color: white;
+      margin: 0;
+    }
+    h2 {
+      font-size: 50px;
+      text-align: center;
+      background: #002F47;
+      color: white;
+      margin: 0px;
+      padding: 20px 0;
+      border: solid;
+      border-width: 3px;
+      border-color: black;
+      border-radius: 5px 5px 0px 0px;
+    }
+    .field-container{
+        background-color: white;
+        color: black;
+        font-size: 40px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        margin: 20px 10px 20px 10px;
+        min-width: 350px;
+    }
+    .metrics-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .metric-box {
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 40px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        height: 150px;
+        padding: 10px 0;
+    }
+    .metric-box .bar {
+      width: 100%;
+      height: 10px;
+      background-color: #dcab28;
+      border-radius: 5px 5px 0 0;
+    }
+    .metric-box .bar1 {
+      width: 100%;
+      height: 10px;
+      background-color: #32acd1;
+      border-radius: 5px 5px 0 0;
+    }
+    .metric-box .bar2 {
+      width: 100%;
+      height: 10px;
+      background-color: #6f5e92;
+      border-radius: 5px 5px 0 0;
+    }
+    .metric-box .bar3 {
+      width: 100%;
+      height: 10px;
+      background-color: #e14e54;
+      border-radius: 5px 5px 0 0;
+    }
+    .metric-box .description {
+      font-size: 30px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 50px;
+      text-align: center;
+      background: #002F47;
+      color: white;
+      margin: 0px;
+      padding: 20px 0;
+      border: solid;
+      border-width: 3px;
+      border-color: black;
+      border-radius: 5px 5px 0px 0px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #002F47;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://www.hagley.org/sites/all/themes/hagley/images/hagley-logo-white-on-trans.png" alt="Hagley Museum Logo">
+    <h1>Fireworks at Hagley</h1>
+    <img src="https://www.hagley.org/sites/all/themes/hagley/images/hagley-logo-white-on-trans.png" alt="Hagley Museum Logo">
+  </div>
+  <div class="field-container">
+    <h2>First Fireworks Day Event</h2>
+    <div class="metrics-container">
+      <div class="metric-box">
+        <div class="bar1"></div>
+        <div>0</div>
+        <div class="description">General Parking Passes</div>
+      </div>
+      <div class="metric-box">
+        <div class="bar"></div>
+        <div>0</div>
+        <div class="description">Premium Parking Passes</div>
+      </div>
+      <div class="metric-box">
+        <div class="bar3"></div>
+        <div>0</div>
+        <div class="description">Adult Wristbands</div>
+      </div>
+      <div class="metric-box">
+        <div class="bar2"></div>
+        <div>0</div>
+        <div class="description">Children Wristbands</div>
+      </div>
+    </div>
+  </div>
+  <div class="field-container">
+    <h3>Second Fireworks Day Event</h3>
+    <div class="metrics-container">
+      <div class="metric-box">
+        <div class="bar1"></div>
+        <div>0</div>
+        <div class="description">General Parking Passes</div>
+      </div>
+      <div class="metric-box">
+        <div class="bar"></div>
+        <div>0</div>
+        <div class="description">Premium Parking Passes</div>
+      </div>
+      <div class="metric-box">
+        <div class="bar3"></div>
+        <div>0</div>
+        <div class="description">Adult Wristbands</div>
+      </div>
+      <div class="metric-box">
+        <div class="bar2"></div>
+        <div>0</div>
+        <div class="description">Children's Wristbands</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>For Internal Use By Hagley Staff</p>
+    <p>&copy;2025 Hagley Museum. All rights reserved.</p>
+  </div>
+</body>
+</html>
